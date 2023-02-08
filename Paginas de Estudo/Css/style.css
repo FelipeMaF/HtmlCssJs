@@ -1,0 +1,44 @@
+h1{
+  background-color: blueviolet;
+  border-color: yellow;
+  border-width: 5px;
+  border-style: dashed;
+
+  /* Ou poderia fazer da forma abaixo: */
+  border: 10px dashed yellow;
+}
+
+li{
+  color: green;
+}
+
+body{
+  background-image: url(https://midias.correiobraziliense.com.br/_midias/jpg/2021/09/24/super_mario_bros-6878334.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.textoVermelho{
+  color: red;
+}
+
+.textoGrande{
+  font-size: 30px;
+}
+
+#comBorda{
+  border: 5px dotted black;
+}
+
+div{
+  border: 2px solid black;
+  color: rgb(6, 255, 35);
+}
+/* Abaixo exemplo de como especificar, para não herdar tudo da tag pai */
+div ul li{
+  color: rgb(13, 29, 255);
+}
+/* como herdar um elemento do pai, no caso o border, sem precisar especificar tudo denovo */
+div ul{
+  border: inherit;
+}
